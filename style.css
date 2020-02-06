@@ -46,13 +46,14 @@ h1, h2, h3, h4, h5 {
     align-items: center;
     flex: 1 1 50%;
     position: relative;
-    background: url(./img/clouds.svg) repeat 65% center;
+    background: url(./img/clouds.svg) no-repeat 65% center;
 }
 
 .logo {
     width: 60%;
     height: auto;
     max-width: 500px;
+    min-width: 334px;
 }
 
 .lang {
@@ -187,14 +188,16 @@ h1, h2, h3, h4, h5 {
     }
     .intro {
         flex: 1 1 70%;
+        width: 10.625rem;
         height: 100vh;
         background-size: 100%;
-        background-repeat: repeat;
+        background-repeat: no-repeat;
     }
     .course {
         flex: 1 1 30%;
         min-width: 500px;
         height: 100vh;
+        /* margin-top: 14.5rem; */
         padding-top: 15vh;
         background-size: initial;
         background-image: none;
@@ -204,6 +207,7 @@ h1, h2, h3, h4, h5 {
     .course__distance {
         top: 10%;
         right: 10%;
+        /*padding-top lisamine ei aita*/
     }
 
     .course__nearest {
