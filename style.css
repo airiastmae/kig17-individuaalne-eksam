@@ -1,15 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,700&display=swap');
 
 :root {
-    --yellow: hsl(0, 0%, 67%);
-    --yellow-lighter: hsl(0, 0%, 86%);
-    --blue: hsl(0, 0%, 58%);
-    --blue-dark: hsl(0, 0%, 31%);
-    --pink: hsl(0, 0%, 65%);
-    --gray: hsl(0, 0%, 87%);
+    --yellow: hsl(47, 77%, 67%);
+    --yellow-lighter: hsl(58, 80%, 86%);
+    --blue: hsl(184, 45%, 58%);
+    --blue-dark: hsl(194, 48%, 31%);
+    --pink: hsl(335, 46%, 65%);
+    --gray: hsl(0, 0%, 90%);
     --white: hsl(0, 0%, 100%);
 
-    --font-main: serif;
-    --font-special: cursive;
+    --font-main: Roboto, serif;
+    --font-special: "Roboto Slab", cursive;
 
     --shadow: 0 0.25rem 0 0 hsla(0, 0%, 0%, 0.25);
 }
@@ -45,11 +46,11 @@ h1, h2, h3, h4, h5 {
     align-items: center;
     flex: 1 1 50%;
     position: relative;
-    background: url(./img/clouds.svg) repeat-x 65% center;
+    background: url(./img/clouds.svg) repeat 65% center;
 }
 
 .logo {
-    width: 80%;
+    width: 60%;
     height: auto;
     max-width: 500px;
 }
@@ -60,8 +61,9 @@ h1, h2, h3, h4, h5 {
     top: 1.25rem;
 }
 .lang__btn {
+    font-weight: 700;
     font-family: var(--font-special);
-    color: var(--pink);
+    color: var(--blue-dark);
     text-decoration: none;
 }
 
@@ -72,13 +74,13 @@ h1, h2, h3, h4, h5 {
     justify-content: center;
     position: relative;
     flex: 0 1 50%;
-    padding: 7vh 3vw;
+    padding: 0vh 3vw;
     background: url(./img/wave.svg) var(--blue-dark) repeat-x 0 0;
     background-size: 0.75rem;
 }
 
 .course__nearest {
-    margin: 1rem 0 0 0;
+    margin: 2.25rem 0 0 0;
     padding: 0; 
     font-size: 0.75rem;
     text-transform: uppercase;
@@ -86,14 +88,14 @@ h1, h2, h3, h4, h5 {
 }
 
 .course__name {
-    margin: 1rem 0 0.25rem 0;
+    margin: 1.3125rem 0 0 0;
     font-size: 1.5rem;
     font-weight: 100;
     color: var(--yellow);
 }
 
 .course__address {
-    margin: 0; padding: 0;
+    margin: 0.4375; padding: 0;
     font-size: 0.75rem;
     color:var(--gray);
 }
@@ -109,12 +111,12 @@ h1, h2, h3, h4, h5 {
     right: 6vw;
     top: -1rem;
     border-radius: 50%;
-    color: var(--white);
-    background: none;
+    color: var(--blue-dark);
+    background: var(--yellow);
     box-shadow: var(--shadow);
 }
 .course__distance-number {
-    font-size: 1.5rem;
+    font-size: 1.875rem;
     line-height: 1;
     margin: 0.5rem 0 0.1rem 0; 
     padding: 0;
@@ -122,7 +124,7 @@ h1, h2, h3, h4, h5 {
 .course__distance-unit {
     font-size: 0.625rem;
     line-height: 1;
-    margin: 420px; padding: 0;
+    margin: 0px; padding: 0;
 }
 
 .course__data {
@@ -130,10 +132,10 @@ h1, h2, h3, h4, h5 {
     justify-content: space-evenly;
     width: 100%;
     max-width: 400px;
-    margin: 1rem 0;
-    font-size: 34px;
+    margin: 1.1875rem 0;
+    font-size: 14px;
     text-transform: uppercase;
-    color: var(--black);
+    color: var(--white);
 }
 
 .course__data-item__number {
@@ -142,16 +144,16 @@ h1, h2, h3, h4, h5 {
 }
 
 .btn-primary {
-    font-size: 9rem;
+    font-size: 1.5rem;
     padding: 0.75rem 1.5rem;
     margin: 1rem 0 1.5rem 0;
     font-family: var(--font-special);
     color: var(--white);
-    background: #927533;
+    background: var(--pink);
     text-decoration: none;
     text-align: center;
     text-transform: uppercase;
-    border-radius: 0.5ch;
+    border-radius: 0.5vh;
     box-shadow: var(--shadow);
 }
 
@@ -160,14 +162,15 @@ h1, h2, h3, h4, h5 {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 0.875rem;
+    padding-bottom: 2.875rem;
 }
 .btn-secondary::after {
     display: inline-block;
     content: "";
     background: url(./img/arrow-right.svg) no-repeat;
     background-position: 100% 50%;
-    width: 2ch;
-    height: 1ch;
+    width: 2vh;
+    height: 1vh;
 }
 
 
@@ -185,7 +188,7 @@ h1, h2, h3, h4, h5 {
     .intro {
         flex: 1 1 70%;
         height: 100vh;
-        background-size: 20%;
+        background-size: 100%;
         background-repeat: repeat;
     }
     .course {
@@ -208,9 +211,9 @@ h1, h2, h3, h4, h5 {
     }
 
     .course__name {
-        font-size: 0.25rem;
+        font-size: 2.25rem;
         margin: 2rem 0 0.5rem 0;
-        transform: rotate(10deg);
+        /* transform: rotate(10deg); */
     }
     .course__address {
         font-size: 0.875rem;
@@ -222,7 +225,7 @@ h1, h2, h3, h4, h5 {
         font-size: 2.25rem;
     }
     .btn-secondary {
-        margin: 15vh 0 0 0;
+        margin: 5.6875rem 0 0 0;
         font-size: 1rem;
     }
 }
