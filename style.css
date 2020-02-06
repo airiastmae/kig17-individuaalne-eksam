@@ -197,7 +197,6 @@ h1, h2, h3, h4, h5 {
         flex: 1 1 30%;
         min-width: 500px;
         height: 100vh;
-        /* margin-top: 14.5rem; */
         padding-top: 15vh;
         background-size: initial;
         background-image: none;
@@ -207,7 +206,6 @@ h1, h2, h3, h4, h5 {
     .course__distance {
         top: 20%;
         right: 10%;
-        /*padding-top lisamine ei aita*/
     }
 
     .course__nearest {
@@ -217,7 +215,6 @@ h1, h2, h3, h4, h5 {
     .course__name {
         font-size: 2.25rem;
         margin: 2rem 0 0.5rem 0;
-        /* transform: rotate(10deg); */
     }
     .course__address {
         font-size: 0.875rem;
